@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/article_heading">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -42,18 +42,13 @@
                 android:id="@+id/article"
                 android:layout_width="wrap_content"
                 android:layout_height="828dp"
-                android:layout_marginStart="100dp"
+                android:layout_toEndOf="@id/article_subheading"
                 android:autoLink="web"
                 android:lineSpacingExtra="@dimen/line_spacing"
                 android:padding="@dimen/padding_regular"
                 android:text="@string/article_text" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="186dp"
-                android:layout_height="wrap_content"
-                android:text="@string/addcomment" />
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
 
 
